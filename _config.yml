@@ -79,7 +79,7 @@ publication_category:
     title: 'Books'
   under-review:
     title: 'Under Review'
-  manuscripts:
+  journal:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'

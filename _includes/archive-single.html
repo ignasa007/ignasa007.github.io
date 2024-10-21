@@ -76,9 +76,11 @@
       <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
     </h2> -->
 
-    {% if post.citation %}
+    {% if post.paperurl %}
       <p>{{ post.citation }} <a href="{{ post.paperurl }}">URL</a>. <a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a>.</p>
+    {% else %}
+      <p>{{ post.citation }} <a href="{{ base_path }}{{ post.url }}" rel="permalink">Read more</a>.</p>
     {% endif %}
-
+    
   </article>
 </div>

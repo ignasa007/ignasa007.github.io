@@ -1,10 +1,10 @@
 ---
-title: "LingML: Linguistic-Informed Machine Learning for Enhanced Fake News Detection"
+title: "Effects of Random Edge-Dropping on Over-Squashing in Graph Neural Networks"
 collection: publications
 category: under-review
-permalink: /publication/lingml
-excerpt: 'We enhance ML-based solutions with linguistics input and we propose LingML, linguistic-informed ML, for fake news detection. We conducted an experimental study with a popular dataset on fake news during the pandemic. The experiment results show that our proposed solution is highly effective. There are fewer than two errors out of every ten attempts with only linguistic input used in ML and the knowledge is highly explainable. When linguistics input is integrated with advanced large-scale ML models for natural language processing, our solution outperforms existing ones with 1.8% average error rate. LingML creates a new path with linguistics to push the frontier of effective and efficient fake news detection.'
-date: 2024-05-07
-paperurl: 'https://arxiv.org/abs/2405.04165'
-citation: '<b>Singh, J.</b>, Jiang, K., Paige, B., Toni, L.. (2024). Effects of Random Edge-Dropping on Over-Squashing in Graph Neural Networks. Under Review.'
+permalink: /publication/edge-dropping
+excerpt: ' While several algorithms, e.g. DropEdge and its variants – DropNode, DropAgg and DropGNN – have successfully addressed the over-smoothing problem, their impact on over-squashing remains largely unexplored. This represents a critical gap in the literature as failure to mitigate over-squashing would make these methods unsuitable for long-range tasks. In this work, we take the first step towards closing this gap by studying the aforementioned algorithms in the context of over-squashing. We present novel theoretical results that characterize the negative effects of DropEdge on sensitivity between distant nodes, suggesting its unsuitability for long-range tasks. Our findings are easily extended to its variants, allowing us to build a comprehensive understanding of how they affect over squashing. We evaluate these methods using real-world datasets, demonstrating their detrimental effects. Specifically, we show that while DropEdge-variants improve test-time performance in short-range tasks, they deteriorate performance in long-range ones. Our theory explains these results as follows: random edge-dropping lowers the effective receptive field of GNNs, which although beneficial for short-range tasks, misaligns the models on long-range ones. This forces the models to overfit to short-range artefacts in the training set, resulting in poor generalization. Our conclusions highlight the need to re-evaluate various methods designed for training deep GNNs, with a renewed focus on modelling long-range interactions.'
+# date: 2024-05-07
+# paperurl: 'https://arxiv.org/abs/2405.04165'
+citation: '<b>Singh, J.</b>, Jiang, K., Paige, B. &amp; Toni, L.. (2024). Effects of Random Edge-Dropping on Over-Squashing in Graph Neural Networks. Under Review.'
 ---

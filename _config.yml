@@ -81,7 +81,7 @@ publication_category:
     title: 'Under Review'
   journal:
     title: 'Journal Articles'    
-  conferences:
+  conference:
     title: 'Conference Papers'
 
 # Site Settings

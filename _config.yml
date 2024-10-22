@@ -31,11 +31,11 @@ author:
   email            : "jasraj.singh.23@ucl.ac.uk" 
 
   # Academic websites
-  arxiv            : ""
+  arxiv            : 
   googlescholar    : "https://scholar.google.com/citations?user=6piRO0kAAAAJ&hl=en"
   impactstory      : # URL
   orcid            : # URL
-  semantic         : "https://www.semanticscholar.org/author/Jasraj-Singh/2300380224"
+  semantic         : # "https://www.semanticscholar.org/author/Jasraj-Singh/2300380224"
   pubmed           : # URL
   researchgate     : # URL
 

@@ -13,6 +13,7 @@ Education
 ======
 
 **M.Sc. in Machine Learning, University College London, 2024**
+------
 * **Grade**: 84.88% &ndash; First Class (Honours)
 * **Thesis Title** &ndash; On the Effects of DropEdge on Over-squashing in Deep GNNs
   
@@ -38,9 +39,10 @@ Education
 
 Publications
 ======
-{% for post in site.publications reversed %}
+
+<ul>{% for post in site.publications reversed %}
   {% include archive-single-cv.html %}
-{% endfor %}
+{% endfor %}</ul>
   
 <!-- Talks
 ======

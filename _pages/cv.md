@@ -45,9 +45,11 @@ AISSC in Science Stream, Venkateshwar International School, India, 2019
 Publications
 ======
 
-<ul>{% for post in site.publications reversed %}
+<ul>
+{% for post in site.publications reversed %}
   {% include archive-single-cv.html %}
-{% endfor %}</ul>
+{% endfor %}
+</ul>
 
 Research Experience
 ======
@@ -108,9 +110,11 @@ Full Stack Data Science Intern at Navtech Pte. Ltd., Singapore, Jul 2020 &ndash;
 Teaching Experience
 ======
 
-<ul>{% for post in site.teaching reversed %}
+<ul>
+{% for post in site.teaching reversed %}
   {% include archive-single-cv.html %}
-{% endfor %}</ul>
+{% endfor %}
+</ul>
   
 Volunteering Experience
 ======

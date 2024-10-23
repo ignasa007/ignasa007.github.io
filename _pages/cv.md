@@ -27,14 +27,26 @@ Education
   * 3rd Prize in International Mathematics Competition &ndash; UCL, England, 2021
   * President Research Scholar &ndash; NTU, Singapore, 2021
 
-**AISSC in Sciences, Venkateshwar International School, India, 2019**
-* Grade &ndash; 96.4%
-* Notable Honours and Awards &ndash;
+**AISSC in Science Stream, Venkateshwar International School, India, 2019**
+* **Grade** &ndash; 96.4%
+* **Notable Honours and Awards** &ndash;
   * JEE Advance Scholarship &ndash; FIITJEE, India, 2019 - 2023
   * KVPY Scholarship &ndash; DST, Government of India, 2019
   * KVPY Scholarship &ndash; DST, Government of India, 2018
   * NTS Scholarship &ndash; NCERT, Government of India, 2017
   * JSTS Scholarship &ndash; DoE, Government of NCT of Delhi, 2016
+
+Publications
+======
+{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}
+  
+<!-- Talks
+======
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html  %}
+  {% endfor %}</ul> -->
 
 Work experience
 ======
@@ -61,18 +73,6 @@ Skills
   * Sub-skill 2.2
   * Sub-skill 2.3
 * Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-<!-- Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul> -->
   
 Teaching
 ======

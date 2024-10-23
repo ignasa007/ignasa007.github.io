@@ -12,11 +12,11 @@ redirect_from:
 Education
 ======
 
-* M.Sc. in Machine Learning, University College London, 2024
+* **M.Sc. in Machine Learning, University College London, 2024**
   * **Grade**: 84.88% &ndash; First Class (Honours)
   * **Thesis Title** &ndash; On the Effects of DropEdge on Over-squashing in Deep GNNs
   
-* B.Sc. in Mathematical and Computer Sciences, Nanyang Technological University, 2023
+* **B.Sc. in Mathematical and Computer Sciences, Nanyang Technological University, 2023**
   * **Grade**: 4.58/5.00 &ndash; First Class (Honours)
   * **Thesis Title** &ndash; Training-Free Neural Active Learning with Initialization-Robustness Guarantees
   * **Notable Honours and Awards** &ndash;
@@ -27,7 +27,7 @@ Education
     * 3rd Prize in International Mathematics Competition &ndash; UCL, England, 2021
     * President Research Scholar &ndash; NTU, Singapore, 2021
 
-* AISSC in Sciences, Venkateshwar International School, India, 2019
+* **AISSC in Sciences, Venkateshwar International School, India, 2019**
   * Grade &ndash; 96.4%
   * Notable Honours and Awards &ndash;
     * JEE Advance Scholarship &ndash; FIITJEE, India, 2019 - 2023

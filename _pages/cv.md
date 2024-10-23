@@ -87,7 +87,7 @@ Product Science Intern at Indeed Inc., Singapore, May 2022 &ndash; Aug 2022
   <li>Modelled the top 20 international markets to identify a minimal criterion for screening resumes</li>
 </ul>
 
-Research Engineering Intern at Shopee Pte. Ltd., Singapore Jan 2022 &ndash; May 2022
+Research Engineering Intern at Shopee Pte. Ltd., Singapore, Jan 2022 &ndash; May 2022
 ------
 
 <ul>
@@ -96,7 +96,7 @@ Research Engineering Intern at Shopee Pte. Ltd., Singapore Jan 2022 &ndash; May 
   <li>Discovered unexpected ranking behaviour and identified the responsible feature through an ablation study</li>
 </ul>
 
-Full Stack Data Science Intern at Navtech Pte. Ltd., Singapore Jul 2020 &ndash; Aug 2020
+Full Stack Data Science Intern at Navtech Pte. Ltd., Singapore, Jul 2020 &ndash; Aug 2020
 ------
 
 <ul>
@@ -115,16 +115,16 @@ Teaching Experience
 Volunteering Experience
 ======
 
-Reviewer &ndash; International Conference on Learning Representations (ICLR), 2024
+**Reviewer** &ndash; International Conference on Learning Representations (ICLR), 2024
 
 Certifications
 ======
 
 <ul>
-  <li>Applied Social Network Analysis in Python &ndash; University of Michigan, 2021</li>
-  <li>Deep Learning Specialization &ndash; DeepLearning.AI, 2021</li>
-  <li>AI Engineering Specialization &ndash; IBM, 2020</li>
-  <li>Algorithms: Design and Analysis &ndash; Stanford University, 2020</li>
+  <li>[**Applied Social Network Analysis in Python**](https://www.coursera.org/account/accomplishments/certificate/LSJR2KMNRRUR) &ndash; University of Michigan, 2021</li>
+  <li>[**Deep Learning Specialization**](https://coursera.org/share/992110f4684c2aa3b9826f73804d4b1c) &ndash; DeepLearning.AI, 2021</li>
+  <li>[**AI Engineering Specialization**](https://www.youracclaim.com/badges/e79bf049-f3d8-45e6-8890-6b83b27b5d7a/linked_in_profile) &ndash; IBM, 2020</li>
+  <li>[**Algorithms: Design and Analysis**](https://verify.lagunita.stanford.edu/SOA/0e460be2891a48d3a44d48b92d9531a8) &ndash; Stanford University, 2020</li>
 </ul>
 
 Skills

@@ -125,16 +125,16 @@ Certifications
 ======
 
 <ul>
-  <li>[**Applied Social Network Analysis in Python**](https://www.coursera.org/account/accomplishments/certificate/LSJR2KMNRRUR) &ndash; University of Michigan, 2021</li>
-  <li>[**Deep Learning Specialization**](https://coursera.org/share/992110f4684c2aa3b9826f73804d4b1c) &ndash; DeepLearning.AI, 2021</li>
-  <li>[**AI Engineering Specialization**](https://www.youracclaim.com/badges/e79bf049-f3d8-45e6-8890-6b83b27b5d7a/linked_in_profile) &ndash; IBM, 2020</li>
-  <li>[**Algorithms: Design and Analysis**](https://verify.lagunita.stanford.edu/SOA/0e460be2891a48d3a44d48b92d9531a8) &ndash; Stanford University, 2020</li>
+  <li>[<b>Applied Social Network Analysis in Python</b>](https://www.coursera.org/account/accomplishments/certificate/LSJR2KMNRRUR) &ndash; University of Michigan, 2021</li>
+  <li>[<b>Deep Learning Specialization</b>](https://coursera.org/share/992110f4684c2aa3b9826f73804d4b1c) &ndash; DeepLearning.AI, 2021</li>
+  <li>[<b>AI Engineering Specialization</b>](https://www.youracclaim.com/badges/e79bf049-f3d8-45e6-8890-6b83b27b5d7a/linked_in_profile) &ndash; IBM, 2020</li>
+  <li>[Algorithms: Design and Analysis</b>](https://verify.lagunita.stanford.edu/SOA/0e460be2891a48d3a44d48b92d9531a8) &ndash; Stanford University, 2020</li>
 </ul>
 
 Skills
 ======
 
 <ul>
-  <li>**Programming Languages** &ndash; Python, SQL, R, MATLAB</li>
-  <li>**Frameworks and Tools** &ndash; PyTorch, Tensorflow, Hadoop (HDFS, YARN), Spark, Airflow</li>
+  <li><b>Programming Languages</b> &ndash; Python, SQL, R, MATLAB</li>
+  <li><b>Frameworks and Tools</b> &ndash; PyTorch, Tensorflow, Hadoop (HDFS, YARN), Spark, Airflow</li>
 </ul>

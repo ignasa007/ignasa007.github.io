@@ -28,50 +28,19 @@ author:
   location         : "United Kingdom"
   employer         : "University College London"
   uri              : # URL
-  email            : "jasraj.singh.23@ucl.ac.uk" 
+  email            : "jasraj.singh.23@ucl.ac.uk"
 
   # Academic websites
   arxiv            : 
   googlescholar    : "https://scholar.google.com/citations?user=6piRO0kAAAAJ&hl=en"
-  impactstory      : # URL
-  orcid            : # URL
   semantic         : # "https://www.semanticscholar.org/author/Jasraj-Singh/2300380224"
-  pubmed           : # URL
-  researchgate     : # URL
 
   # Repositories and software development
-  bitbucket        : # Username - Update with your username on the site
-  codepen          : # Username
-  dribbble         : # Username
   github           : "ignasa007"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
   linkedin         : "singh-jasraj"
-  mastodon         : # URL
   medium           : "singh-jasraj"
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:

@@ -18,15 +18,15 @@ Education
 
 <ul style="list-style-type: disc; padding-left: 5mm;">
   <li><b>Grade</b>: 84.88% &ndash; First Class (Honours)</li>
-  <li><b>Thesis Title</b> &ndash; On the Effects of DropEdge on Over-squashing in Deep GNNs</li>
+  <li><b>Thesis Title</b>: On the Effects of DropEdge on Over-squashing in Deep GNNs</li>
 </ul>
   
 ### B.Sc. in Mathematical and Computer Sciences, Nanyang Technological University (2019 &ndash; 2023)
 
 <ul style="list-style-type: disc; padding-left: 5mm;">
   <li><b>Grade</b>: 4.58/5.00 &ndash; First Class (Honours)
-  <li><b>Thesis Title</b> &ndash; Training-Free Neural Active Learning with Initialization-Robustness Guarantees
-  <li><b>Notable Honours and Awards</b> &ndash;
+  <li><b>Thesis Title</b>: Training-Free Neural Active Learning with Initialization-Robustness Guarantees
+  <li><b>Notable Honours and Awards</b>:
   <ul style="list-style-type: disc; padding-left: 5mm;">
     <li>1st Prize in Integration Bee &ndash; NTU, Singapore (2023)
     <li>3rd Prize in IET-Cup Hackathon &ndash; NTU, Singapore (2022)
@@ -40,8 +40,8 @@ Education
 ### AISSC in Science Stream, Venkateshwar International School, India (2017 &ndash; 2019)
 
 <ul style="list-style-type: disc; padding-left: 5mm;">
-  <li><b>Grade</b> &ndash; 96.4%
-  <li><b>Notable Honours and Awards</b> &ndash;
+  <li><b>Grade</b>: 96.4%
+  <li><b>Notable Honours and Awards</b>:
   <ul style="list-style-type: disc; padding-left: 5mm;">
     <li>JEE Advance Scholarship &ndash; FIITJEE, India (2019 - 2023)
     <li>KVPY Scholarship &ndash; DST, Government of India (2019)

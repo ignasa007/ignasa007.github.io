@@ -22,31 +22,33 @@ Education
 ### B.Sc. in Mathematical and Computer Sciences, Nanyang Technological University (2019 &ndash; 2023)
 
 <ul style="list-style-type: disc; padding-left: 5mm;">
-  <li><b>Grade</b>: 4.58/5.00 &ndash; First Class (Honours)
-  <li><b>Thesis Title</b>: Training-Free Neural Active Learning with Initialization-Robustness Guarantees
+  <li><b>Grade</b>: 4.58/5.00 &ndash; First Class (Honours)</li>
+  <li><b>Thesis Title</b>: Training-Free Neural Active Learning with Initialization-Robustness Guarantees</li>
   <li><b>Notable Honours and Awards</b>:
     <ul style="list-style-type: disc; padding-left: 5mm;">
-      <li><b>1st Prize in Integration Bee</b> &ndash; NTU, Singapore (2023)
-      <li><b>3rd Prize in IET-Cup Hackathon</b> &ndash; NTU, Singapore (2022)
-      <li><b>1st Prize in Integration Bee</b> &ndash; NTU, Singapore (2022)
-      <li><b>1st Prize in Electronic Trading Challenge</b> &ndash; Jane Street Capital (2021)
-      <li><b>3rd Prize in International Mathematics Competition</b> &ndash; UCL, England (2021)
-      <li><b>President Research Scholar</b> &ndash; NTU, Singapore (2021)
+      <li><b>1st Prize in Integration Bee</b> &ndash; NTU, Singapore (2023)</li>
+      <li><b>3rd Prize in IET-Cup Hackathon</b> &ndash; NTU, Singapore (2022)</li>
+      <li><b>1st Prize in Integration Bee</b> &ndash; NTU, Singapore (2022)</li>
+      <li><b>1st Prize in Electronic Trading Challenge</b> &ndash; Jane Street Capital (2021)</li>
+      <li><b>3rd Prize in International Mathematics Competition</b> &ndash; UCL, England (2021)</li>
+      <li><b>President Research Scholar</b> &ndash; NTU, Singapore (2021)</li>
     </ul>
+  </li>
 </ul>
 
 ### AISSC in Science Stream, Venkateshwar International School, India (2017 &ndash; 2019)
 
 <ul style="list-style-type: disc; padding-left: 5mm;">
-  <li><b>Grade</b>: 96.4%
+  <li><b>Grade</b>: 96.4%</li>
   <li><b>Notable Honours and Awards</b>:
     <ul style="list-style-type: disc; padding-left: 5mm;">
-      <li><b>JEE Advance Scholarship</b> &ndash; FIITJEE, India (2019 - 2023)
-      <li><b>KVPY Scholarship</b> &ndash; DST, Government of India (2019)
-      <li><b>KVPY Scholarship</b> &ndash; DST, Government of India (2018)
-      <li><b>NTS Scholarship</b> &ndash; NCERT, Government of India (2017)
-      <li><b>JSTS Scholarship</b> &ndash; DoE, Government of NCT of Delhi (2016)
+      <li><b>JEE Advance Scholarship</b> &ndash; FIITJEE, India (2019 - 2023)</li>
+      <li><b>KVPY Scholarship</b> &ndash; DST, Government of India (2019)</li>
+      <li><b>KVPY Scholarship</b> &ndash; DST, Government of India (2018)</li>
+      <li><b>NTS Scholarship</b> &ndash; NCERT, Government of India (2017)</li>
+      <li><b>JSTS Scholarship</b> &ndash; DoE, Government of NCT of Delhi (2016)</li>
     </ul>
+  </li>
 </ul>
 
 Publications
@@ -120,16 +122,18 @@ Teaching Experience
 Volunteering Experience
 ------
 
-<b>Reviewer</b> &ndash; International Conference on Learning Representations (ICLR), 2024
+<ul style="list-style-type: disc; padding-left: 5mm;">
+  <li><b>Reviewer</b> &ndash; International Conference on Learning Representations (2024)</li>
+</ul>
 
 Certifications
 ------
 
 <ul style="list-style-type: disc; padding-left: 5mm;">
-  <li><a href="https://www.coursera.org/account/accomplishments/certificate/LSJR2KMNRRUR"><strong>Applied Social Network Analysis in Python</strong></a> &ndash; University of Michigan, 2021</li>
-  <li><a href="https://coursera.org/share/992110f4684c2aa3b9826f73804d4b1c"><strong>Deep Learning Specialization</strong></a> &ndash; DeepLearning.AI, 2021</li>
-  <li><a href="https://www.youracclaim.com/badges/e79bf049-f3d8-45e6-8890-6b83b27b5d7a/linked_in_profile"><strong>AI Engineering Specialization</strong></a> &ndash; IBM, 2020</li>
-  <li><a href="https://verify.lagunita.stanford.edu/SOA/0e460be2891a48d3a44d48b92d9531a8"><strong>Algorithms: Design and Analysis</strong></a> &ndash; Stanford University, 2020</li>
+  <li><a href="https://www.coursera.org/account/accomplishments/certificate/LSJR2KMNRRUR"><strong>Applied Social Network Analysis in Python</strong></a> &ndash; University of Michigan (2021)</li>
+  <li><a href="https://coursera.org/share/992110f4684c2aa3b9826f73804d4b1c"><strong>Deep Learning Specialization</strong></a> &ndash; DeepLearning.AI (2021)</li>
+  <li><a href="https://www.youracclaim.com/badges/e79bf049-f3d8-45e6-8890-6b83b27b5d7a/linked_in_profile"><strong>AI Engineering Specialization</strong></a> &ndash; IBM (2020)</li>
+  <li><a href="https://verify.lagunita.stanford.edu/SOA/0e460be2891a48d3a44d48b92d9531a8"><strong>Algorithms: Design and Analysis</strong></a> &ndash; Stanford University (2020)</li>
 </ul>
 
 Skills

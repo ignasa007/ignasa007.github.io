@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: <"text-decoration: underline double;">"Curriculum Vitae"</span>
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:

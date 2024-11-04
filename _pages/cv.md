@@ -26,12 +26,12 @@ Education
   <li><b>Thesis Title</b>: Training-Free Neural Active Learning with Initialization-Robustness Guarantees
   <li><b>Notable Honours and Awards</b>:
     <ul style="list-style-type: disc; padding-left: 5mm;">
-      <li>1st Prize in Integration Bee &ndash; NTU, Singapore (2023)
-      <li>3rd Prize in IET-Cup Hackathon &ndash; NTU, Singapore (2022)
-      <li>1st Prize in Integration Bee &ndash; NTU, Singapore (2022)
-      <li>1st Prize in Electronic Trading Challenge &ndash; Jane Street Capital (2021)
-      <li>3rd Prize in International Mathematics Competition &ndash; UCL, England (2021)
-      <li>President Research Scholar &ndash; NTU, Singapore (2021)
+      <li><b>1st Prize in Integration Bee</b> &ndash; NTU, Singapore (2023)
+      <li><b>3rd Prize in IET-Cup Hackathon</b> &ndash; NTU, Singapore (2022)
+      <li><b>1st Prize in Integration Bee</b> &ndash; NTU, Singapore (2022)
+      <li><b>1st Prize in Electronic Trading Challenge</b> &ndash; Jane Street Capital (2021)
+      <li><b>3rd Prize in International Mathematics Competition</b> &ndash; UCL, England (2021)
+      <li><b>President Research Scholar</b> &ndash; NTU, Singapore (2021)
     </ul>
 </ul>
 
@@ -41,11 +41,11 @@ Education
   <li><b>Grade</b>: 96.4%
   <li><b>Notable Honours and Awards</b>:
     <ul style="list-style-type: disc; padding-left: 5mm;">
-      <li>JEE Advance Scholarship &ndash; FIITJEE, India (2019 - 2023)
-      <li>KVPY Scholarship &ndash; DST, Government of India (2019)
-      <li>KVPY Scholarship &ndash; DST, Government of India (2018)
-      <li>NTS Scholarship &ndash; NCERT, Government of India (2017)
-      <li>JSTS Scholarship &ndash; DoE, Government of NCT of Delhi (2016)
+      <li><b>JEE Advance Scholarship</b> &ndash; FIITJEE, India (2019 - 2023)
+      <li><b>KVPY Scholarship</b> &ndash; DST, Government of India (2019)
+      <li><b>KVPY Scholarship</b> &ndash; DST, Government of India (2018)
+      <li><b>NTS Scholarship</b> &ndash; NCERT, Government of India (2017)
+      <li><b>JSTS Scholarship</b> &ndash; DoE, Government of NCT of Delhi (2016)
     </ul>
 </ul>
 

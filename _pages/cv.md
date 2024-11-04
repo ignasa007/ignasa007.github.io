@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<br>
+
 <ins><span style="font-variant:small-caps;">Education</span></ins>
 ======
 

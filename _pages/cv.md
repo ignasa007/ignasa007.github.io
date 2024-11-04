@@ -25,7 +25,7 @@ Education
   <li><b>Grade</b>: 4.58/5.00 &ndash; First Class (Honours)</li>
   <li><b>Thesis Title</b>: Training-Free Neural Active Learning with Initialization-Robustness Guarantees</li>
   <li><b>Notable Honours and Awards</b>:
-    <ul style="list-style-type: disc; padding-left: 5mm;">
+    <ul style="list-style-type: circle; padding-left: 5mm;">
       <li><b>1st Prize in Integration Bee</b> &ndash; NTU, Singapore (2023)</li>
       <li><b>3rd Prize in IET-Cup Hackathon</b> &ndash; NTU, Singapore (2022)</li>
       <li><b>1st Prize in Integration Bee</b> &ndash; NTU, Singapore (2022)</li>
@@ -41,7 +41,7 @@ Education
 <ul style="list-style-type: disc; padding-left: 5mm;">
   <li><b>Grade</b>: 96.4%</li>
   <li><b>Notable Honours and Awards</b>:
-    <ul style="list-style-type: disc; padding-left: 5mm;">
+    <ul style="list-style-type: circle; padding-left: 5mm;">
       <li><b>JEE Advance Scholarship</b> &ndash; FIITJEE, India (2019 - 2023)</li>
       <li><b>KVPY Scholarship</b> &ndash; DST, Government of India (2019)</li>
       <li><b>KVPY Scholarship</b> &ndash; DST, Government of India (2018)</li>

@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+<span style="font-variant:small-caps;">Education</span>
 ------
 
 ### M.Sc. in Machine Learning, University College London (2023 &ndash; 2024)
@@ -51,7 +51,7 @@ Education
   </li>
 </ul>
 
-Publications
+<span style="font-variant:small-caps;">Publications</span>
 ------
 
 <ul style="list-style-type: disc; padding-left: 5mm;">
@@ -60,7 +60,7 @@ Publications
 {% endfor %}
 </ul>
 
-Research Experience
+<span style="font-variant:small-caps;">Research Experience</span>
 ------
 
 ### Learning and Signal Processing Lab, UCL (Mar 2023 &ndash; Oct 2024)
@@ -84,7 +84,7 @@ Research Experience
   <li>Proposed several AL algorithms using the EV-GP criterion, and benchmarked them against BADGE, MLMOC and K-Means++ algorithms on (E)MNIST, SVHN, CIFAR-100 and various UCI datasets</li>
 </ul>
 
-Employment Experience
+<span style="font-variant:small-caps;">Employment Experience</span>
 ------
 
 ### Product Science Intern at Indeed Inc., Singapore (May 2022 &ndash; Aug 2022)
@@ -110,7 +110,7 @@ Employment Experience
   <li>Proposed a solution to the cold start problem by engaging with the user before recommending to them</li>
 </ul>
 
-Teaching Experience
+<span style="font-variant:small-caps;">Teaching Experience</span>
 ------
 
 <ul style="list-style-type: disc; padding-left: 5mm;">
@@ -119,14 +119,14 @@ Teaching Experience
 {% endfor %}
 </ul>
   
-Volunteering Experience
+<span style="font-variant:small-caps;">Volunteering Experience</span>
 ------
 
 <ul style="list-style-type: disc; padding-left: 5mm;">
   <li><b>Reviewer</b> &ndash; International Conference on Learning Representations (2024)</li>
 </ul>
 
-Certifications
+<span style="font-variant:small-caps;">Certifications</span>
 ------
 
 <ul style="list-style-type: disc; padding-left: 5mm;">
@@ -136,7 +136,7 @@ Certifications
   <li><a href="https://verify.lagunita.stanford.edu/SOA/0e460be2891a48d3a44d48b92d9531a8"><strong>Algorithms: Design and Analysis</strong></a> &ndash; Stanford University (2020)</li>
 </ul>
 
-Skills
+<span style="font-variant:small-caps;">Skills</span>
 ------
 
 <ul style="list-style-type: disc; padding-left: 5mm;">

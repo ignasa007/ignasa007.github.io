@@ -1,13 +1,14 @@
-<!-- ---
+---
 layout: archive
 title: "Curriculum Vitae"
-permalink: /cv/
+permalink: /files/academic-cv_jasraj-singh.pdf
 author_profile: true
 redirect_from:
   - /resume
---- -->
+  - /cv
+---
 
-{% include base_path %}
+<!-- {% include base_path %}
 
 <div style="margin-top: 50px;"></div>
 
@@ -144,4 +145,4 @@ Skills
 <ul style="list-style-type: disc; padding-left: 5mm;">
   <li><b>Programming Languages</b> &ndash; Python, SQL, R, MATLAB</li>
   <li><b>Frameworks and Tools</b> &ndash; PyTorch, Tensorflow, Hadoop (HDFS, YARN), Spark, Airflow</li>
-</ul>
+</ul> -->

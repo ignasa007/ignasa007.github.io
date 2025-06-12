@@ -36,7 +36,7 @@ initialized models. NAS addresses this challenge by automating the
 discovery of high-performing architectures within a predefined search
 space ([Poyser et al., 2024](#ref-poyser_2024_nas-review)). Most methods
 for NAS incur a high search cost in the form of (partially) training the
-architectures to score them, and/or training a \*search model\* that can
+architectures to score them, and/or training a _search model_ that can
 make the architecture search efficient. Recently, there has been a
 increased focus on cheapening the search process, while retaining or
 improving the quality of the selected architectures. Some of these are

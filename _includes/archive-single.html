@@ -54,22 +54,22 @@
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">Abstract</a>
       {% endif %}
-      <br>
 
     {% elsif post.collection == 'teaching' %}
       
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink"><b>{{ title }}</b></a>
       <br>
       <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
-      <br>
 
     {% else %}
       
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink"><b>{{ title }}</b></a>
       <br>
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
       
     {% endif %}
+
+    <br><br>
     
   </article>
 </div>

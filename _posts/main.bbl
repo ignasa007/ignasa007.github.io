@@ -1,0 +1,91 @@
+\begin{thebibliography}{}
+
+\bibitem[Akaho, 2007]{akaho2007kcca}
+Akaho, S. (2007).
+\newblock A kernel method for canonical correlation analysis.
+
+\bibitem[Chang et~al., 2013]{chang13hsic}
+Chang, B., Kruger, U., Kustra, R., and Zhang, J. (2013).
+\newblock Canonical correlation analysis based on hilbert-schmidt independence criterion and centered kernel target alignment.
+\newblock In {\em Proceedings of the 30th International Conference on Machine Learning}, volume~28 of {\em Proceedings of Machine Learning Research}, pages 316--324, Atlanta, Georgia, USA. PMLR.
+
+\bibitem[Chen et~al., 2021]{chen2020tenas}
+Chen, W., Gong, X., and Wang, Z. (2021).
+\newblock Neural architecture search on imagenet in four gpu hours: A theoretically inspired perspective.
+\newblock In {\em International Conference on Learning Representations}.
+
+\bibitem[Cortes et~al., 2012]{cortes12kta}
+Cortes, C., Mohri, M., and Rostamizadeh, A. (2012).
+\newblock Algorithms for learning kernels based on centered alignment.
+\newblock {\em Journal of Machine Learning Research}, 13(28):795--828.
+
+\bibitem[de~G.~Matthews et~al., 2018]{matthews2018gaussianprocessbehaviourwide}
+de~G.~Matthews, A.~G., Rowland, M., Hron, J., Turner, R.~E., and Ghahramani, Z. (2018).
+\newblock Gaussian process behaviour in wide deep neural networks.
+
+\bibitem[Dong and Yang, 2020]{dong2020nasbench201}
+Dong, X. and Yang, Y. (2020).
+\newblock Nas-bench-201: Extending the scope of reproducible neural architecture search.
+\newblock In {\em International Conference on Learning Representations (ICLR)}.
+
+\bibitem[Englisch and Hiemstra, 1994]{englisch_1994_corr-mse}
+Englisch, H. and Hiemstra, Y. (1994).
+\newblock The correlation as cost function in neural networks.
+\newblock In {\em Proceedings of 1994 IEEE International Conference on Neural Networks (ICNN'94)}, volume~5, pages 3170--3172 vol.5.
+
+\bibitem[Gretton et~al., 2005a]{gretton2005hsic}
+Gretton, A., Bousquet, O., Smola, A., and Sch{\"o}lkopf, B. (2005a).
+\newblock Measuring statistical dependence with hilbert-schmidt norms.
+\newblock In Jain, S., Simon, H.~U., and Tomita, E., editors, {\em Algorithmic Learning Theory}, pages 63--77, Berlin, Heidelberg. Springer Berlin Heidelberg.
+
+\bibitem[Gretton et~al., 2005b]{gretton05a}
+Gretton, A., Herbrich, R., Smola, A., Bousquet, O., and Sch{\"o}lkopf, B. (2005b).
+\newblock Kernel methods for measuring independence.
+\newblock {\em Journal of Machine Learning Research}, 6(70):2075--2129.
+
+\bibitem[He et~al., 2020]{bobby_2020_bayesian-ensembles-ntk}
+He, B., Lakshminarayanan, B., and Teh, Y.~W. (2020).
+\newblock Bayesian deep ensembles via the neural tangent kernel.
+\newblock In {\em Advances in Neural Information Processing Systems}, volume~33, pages 1010--1022. Curran Associates, Inc.
+
+\bibitem[Hemachandra et~al., 2023]{hemachandra23a}
+Hemachandra, A., Dai, Z., Singh, J., Ng, S.-K., and Low, B. K.~H. (2023).
+\newblock Training-free neural active learning with initialization-robustness guarantees.
+\newblock In {\em Proceedings of the 40th International Conference on Machine Learning}, volume 202 of {\em Proceedings of Machine Learning Research}, pages 12931--12971. PMLR.
+
+\bibitem[Jacot et~al., 2018]{jacot_2018_ntk}
+Jacot, A., Gabriel, F., and Hongler, C. (2018).
+\newblock Neural tangent kernel: Convergence and generalization in neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems}, volume~31. Curran Associates, Inc.
+
+\bibitem[Lee et~al., 2019]{lee_2019_wide-nets-linear}
+Lee, J., Xiao, L., Schoenholz, S., Bahri, Y., Novak, R., Sohl-Dickstein, J., and Pennington, J. (2019).
+\newblock Wide neural networks of any depth evolve as linear models under gradient descent.
+\newblock In {\em Advances in Neural Information Processing Systems}, volume~32. Curran Associates, Inc.
+
+\bibitem[Liu et~al., 2019]{liu2018darts}
+Liu, H., Simonyan, K., and Yang, Y. (2019).
+\newblock {DARTS}: Differentiable architecture search.
+\newblock In {\em International Conference on Learning Representations}.
+
+\bibitem[Melzer et~al., 2001]{thomas2001kcca}
+Melzer, T., Reiter, M., and Bischof, H. (2001).
+\newblock Nonlinear feature extraction using generalized canonical correlation analysis.
+\newblock In Dorffner, G., Bischof, H., and Hornik, K., editors, {\em Artificial Neural Networks --- ICANN 2001}, pages 353--360, Berlin, Heidelberg. Springer Berlin Heidelberg.
+
+\bibitem[Poyser and Breckon, 2024]{poyser_2024_nas-review}
+Poyser, M. and Breckon, T.~P. (2024).
+\newblock Neural architecture search: A contemporary literature review for computer vision applications.
+\newblock {\em Pattern Recognition}, 147:110052.
+
+\bibitem[Xu et~al., 2021]{pmlr-v139-xu21m}
+Xu, J., Zhao, L., Lin, J., Gao, R., Sun, X., and Yang, H. (2021).
+\newblock Knas: Green neural architecture search.
+\newblock In Meila, M. and Zhang, T., editors, {\em Proceedings of the 38th International Conference on Machine Learning}, volume 139 of {\em Proceedings of Machine Learning Research}, pages 11613--11625. PMLR.
+
+\bibitem[Ying et~al., 2019]{ying19nasbench101}
+Ying, C., Klein, A., Christiansen, E., Real, E., Murphy, K., and Hutter, F. (2019).
+\newblock {NAS}-bench-101: Towards reproducible neural architecture search.
+\newblock In {\em Proceedings of the 36th International Conference on Machine Learning}, volume~97 of {\em Proceedings of Machine Learning Research}, pages 7105--7114, Long Beach, California, USA. PMLR.
+
+\end{thebibliography}

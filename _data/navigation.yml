@@ -11,8 +11,8 @@ main:
   - title: "Teaching"
     url: /teaching/
         
-  # - title: "Blog Posts"
-  #   url: /blog/
+  - title: "Blog Posts"
+    url: /blog/
     
   - title: "CV"
     url: "/files/academic-cv_jasraj-singh.pdf"

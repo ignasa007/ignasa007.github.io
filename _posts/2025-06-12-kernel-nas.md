@@ -18,7 +18,7 @@ metric for scoring models on a given dataset, thereby introducing a new
 strategy for Neural Architecture Search (NAS). The score is defined as
 the (kernel) canonical correlation ([Akaho, 2007](#ref-akaho2007kcca);
 [Melzer et al., 2001](#ref-thomas2001kcca)) between the inputs,
-$\mathbf{X}$, and the outputs, $\mathbf{Y}$, with respect to the
+\(\mathbf{X}\), and the outputs, \(\mathbf{Y}\), with respect to the
 Reproducing Kernel Hilbert Spaces (RKHS) corresponding to the Neural
 Tangent Kernel (NTK) and the linear kernel, respectively. We provide a
 theoretical motivation for this metric, and aim to validate its efficacy
@@ -60,15 +60,15 @@ for the purpose of computing the kernel canonical correlation (KCC)
 # Theory
 
 For simplicity, we assume that we have a univariate regression task at
-hand. Consider the set of neural network functions, $\mathcal{A}$,
-parameterized by some architecture, $\mathbf{A}$. Most neural networks
+hand. Consider the set of neural network functions, \(\mathcal{A}\),
+parameterized by some architecture, \(\mathbf{A}\). Most neural networks
 designed for regression have a linear output layer, and we assume the
-same for $\mathbf{A}$. In that case, minimizing the Mean Squared Error
+same for \(\mathbf{A}\). In that case, minimizing the Mean Squared Error
 (MSE) between the network output and the regression labels, is
 equivalent to maximizing their correlation, since the parameters of the
 output layer can be adjusted post-training to get the minimizer of the
 MSE ([Englisch et al., 1994](#ref-englisch_1994_corr-mse)). Accordingly,
-we define the score for architecture $\mathbf{A}$ as
+we define the score for architecture \(\mathbf{A}\) as
 
 $$\begin{aligned}
   S\left(\mathbf{A}\right)
@@ -76,31 +76,31 @@ $$\begin{aligned}
   = \max_{f\in\mathcal{A}, g\in\mathcal{L}} \text{Corr}\left(f\left(\mathbf{X}\right), g\left(\mathbf{Y}\right)\right)
 \end{aligned}$$
 
-where $\mathcal{L}$ is the space of linear functions on $\mathbf{Y}$.
+where \(\mathcal{L}\) is the space of linear functions on \(\mathbf{Y}\).
 This optimization is, in general, hard to perform. \<!-- Furthermore, it
 is somewhat unprincipled since the subset of functions accessible to
-gradient descent is not the entirety of $\mathcal{A}$. --\> Instead, if
+gradient descent is not the entirety of \(\mathcal{A}\). --\> Instead, if
 we were to optimize over some RKHS, then the optimization is equivalent
 to performing kernel canonical correlation analysis (KCCA) with the
-associated reproducing kernel on $\mathbf{X}$ and the linear kernel on
-$\mathbf{Y}$. Accordingly, we seek an RKHS that can approximate the
+associated reproducing kernel on \(\mathbf{X}\) and the linear kernel on
+\(\mathbf{Y}\). Accordingly, we seek an RKHS that can approximate the
 space of functions the network can converge to.
 
 ## Neural Tangent Kernel
 
-Consider an $L$-layer fully-connected feed-forward network under the NTK
+Consider an \(L\)-layer fully-connected feed-forward network under the NTK
 parameterization:
 
 $$\begin{aligned}
   \mathbf{x}^{l+1} = \mathbf{W}^{l+1}\mathbf{x}^l + \mathbf{b}^{l+1}
 \end{aligned}$$
 
-where $W_{ij} \sim \mathcal{N}\left(0, \sigma_w^2/n_l\right)$ and
-$b_i \sim \mathcal{N}\left(0, \sigma_b^2\right)$, $n_l$ being the width
-of layer $l$. We define
-$\mathbf{\theta}^l \coloneqq \text{vec}\left(\left\{W^l,b^l\right\}\right)$
-as the collection of parameters in layer $l$, and
-$\mathbf{\theta} \coloneqq \text{vec}\left(\cup_{l=1}^L \mathbf{\theta}^l \right)$
+where \(W_{ij} \sim \mathcal{N}\left(0, \sigma_w^2/n_l\right)\) and
+\(b_i \sim \mathcal{N}\left(0, \sigma_b^2\right)\), \(n_l\) being the width
+of layer \(l\). We define
+\(\mathbf{\theta}^l \coloneqq \text{vec}\left(\left\{W^l,b^l\right\}\right)\)
+as the collection of parameters in layer \(l\), and
+\(\mathbf{\theta} \coloneqq \text{vec}\left(\cup_{l=1}^L \mathbf{\theta}^l \right)\)
 as the collection of all parameters.
 
 The parameter dynamics and the predictive dynamics for this model under
@@ -111,17 +111,17 @@ $$\begin{aligned}
   \dot{f}(\mathbf{X}; \theta_t) &= \nabla_{\theta}f(\mathbf{X};\theta_t) \dot{\theta}_t = -\eta \underbrace{\nabla_{\theta} f(\mathbf{X}; \theta_t) \nabla_{\theta} f(\mathbf{X}; \theta_t)^T}_{\triangleq \hat{\Theta}_t(\mathbf{X}, \mathbf{X})} \nabla_{f} \mathcal{L}(\mathcal{D}; \theta_t)
 \end{aligned}$$
 
-where $\mathcal{D}$ is the training data set, $\mathcal{L}$ is the loss
-function, $\eta$ is the learning rate, and $\hat{\Theta}_t$ is the
+where \(\mathcal{D}\) is the training data set, \(\mathcal{L}\) is the loss
+function, \(\eta\) is the learning rate, and \(\hat{\Theta}_t\) is the
 Empirical Neural Tangent Kernel (NTK) ([Jacot et al.,
 2018](#ref-jacot_2018_ntk)).
 
 In the infinite-width limit, the NTK converges in distribution to an
-analytical limit, $\Theta$, and the NNs evolve as linear models ([Lee et
+analytical limit, \(\Theta\), and the NNs evolve as linear models ([Lee et
 al., 2019](#ref-lee_2019_wide-nets-linear)). Under gradient flow, the
 predictive distribution of this wide network converges to a normal
 distribution ([Lee et al., 2019](#ref-lee_2019_wide-nets-linear)),
-$f^{\text{lin}}_{\theta_{\infty}}\left(x\right) \sim \mathcal{N}\left(\mu_{\text{NN}}\left(x\right),\Sigma_{\text{NN}}\left(x,x\right)\right)$,
+\(f^{\text{lin}}_{\theta_{\infty}}\left(x\right) \sim \mathcal{N}\left(\mu_{\text{NN}}\left(x\right),\Sigma_{\text{NN}}\left(x,x\right)\right)\),
 where
 
 $$\begin{aligned}
@@ -133,20 +133,20 @@ $$\begin{aligned}
   \end{split}
 \end{aligned}$$
 
-where $\mathcal{K}$ denotes the NN-GP kernel ([G. Matthews et al.,
+where \(\mathcal{K}\) denotes the NN-GP kernel ([G. Matthews et al.,
 2018](#ref-matthews2018gaussianprocessbehaviourwide)), defined as
-$\mathcal{K}\left(x,x'\right) = \mathbb{E} \left[f_{\theta}\left(x\right) \cdot f_{\theta}\left(x'\right)\right]$
+\(\mathcal{K}\left(x,x'\right) = \mathbb{E} \left[f_{\theta}\left(x\right) \cdot f_{\theta}\left(x'\right)\right]\)
 which also converges in the infinite-width limit.
 
-The covariance $\Sigma_{\text{NN}}$ is inconvenient to deal with,
+The covariance \(\Sigma_{\text{NN}}\) is inconvenient to deal with,
 involving two computationally expensive kernel computations, and a
 series of cubic-time matrix operations. To tackle this, we can augment
-the forward pass (denoted by $\tilde{f}_{\theta}$) by adding a random,
+the forward pass (denoted by \(\tilde{f}_{\theta}\)) by adding a random,
 untrainable function, which results in the distribution at convergence
-having a GP-posterior-like form, with $\Theta$ as the covariance kernel
+having a GP-posterior-like form, with \(\Theta\) as the covariance kernel
 ([He et al., 2020](#ref-bobby_2020_bayesian-ensembles-ntk)),
-$\tilde{f}_{\theta_{\infty}} \sim \mathcal{N}\left(\mu_{\text{NTK}},\Sigma_{\text{NTK}}\right)$,
-where $\mu_{\text{NTK}} = \mu_{\text{NN}}$ and:
+\(\tilde{f}_{\theta_{\infty}} \sim \mathcal{N}\left(\mu_{\text{NTK}},\Sigma_{\text{NTK}}\right)\),
+where \(\mu_{\text{NTK}} = \mu_{\text{NN}}\) and:
 
 $$\begin{aligned}
     \Sigma_{\text{NTK}}\left(x,x'\right) = \Theta\left(x,x'\right) - \Theta\left(x,\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \Theta\left(\mathbf{X},x'\right)
@@ -154,22 +154,22 @@ $$\begin{aligned}
 
 Importantly, in my Bachelor's thesis project ([Hemachandra et al.,
 2023](#ref-hemachandra23a)), we showed that the ratio between
-$\Sigma_{\text{NN}}\left(x,x'\right)$ and
-$\Sigma_{\text{NTK}}\left(x,x'\right)$ can be tightly upper bounded, and
+\(\Sigma_{\text{NN}}\left(x,x'\right)\) and
+\(\Sigma_{\text{NTK}}\left(x,x'\right)\) can be tightly upper bounded, and
 hence, the NTK-GP posterior,
-$\mathcal{N}\left(\mu_{\text{NTK-GP}}\left(x\right),\Sigma_{\text{NTK-GP}}\left(x,x\right)\right)$,
+\(\mathcal{N}\left(\mu_{\text{NTK-GP}}\left(x\right),\Sigma_{\text{NTK-GP}}\left(x,x\right)\right)\),
 may be considered a reasonable approximation for the predictive
 distribution,
-$\mathcal{N}\left(\mu_{\text{NN}}\left(x\right),\Sigma_{\text{NN}}\left(x,x\right)\right)$.
+\(\mathcal{N}\left(\mu_{\text{NN}}\left(x\right),\Sigma_{\text{NN}}\left(x,x\right)\right)\).
 
 ## Kernel Canonical Correlation Analysis
 
 We now consider the more practical architectures which have finite
 width, so that the feature mapping,
-$x \mapsto \nabla_{\theta}f_{\theta}\left(x\right)$, associated with the
-empirical NTK, $\Theta$, is finite dimensional. Hence, the samples from
+\(x \mapsto \nabla_{\theta}f_{\theta}\left(x\right)\), associated with the
+empirical NTK, \(\Theta\), is finite dimensional. Hence, the samples from
 the NTK-GP prior are almost-surely contained in the RKHS,
-$\mathcal{H}_{\Theta}$, associated with $\Theta$ (\<span
+\(\mathcal{H}_{\Theta}\), associated with \(\Theta\) (\<span
 style=\"color:red\"\>not sure about this part\</span\>). Since the GP
 posterior does not have support where the prior does not, the posterior
 samples are also contained in this RKHS. Therefore, we can use the RKHS
@@ -180,11 +180,11 @@ $$\begin{aligned}
     \approx \max_{f\in\mathcal{H}_{\Theta}, g\in\mathcal{L}} \text{Corr}\left(f\left(\mathbf{X}\right), g\left(\mathbf{Y}\right)\right)
 \end{aligned}$$
 
-This value is trivially equal to $\pm 1$ when the kernel matrices
-associated with $\mathbf{X}$ and $\mathbf{Y}$ are full-rank ([Gretton,
+This value is trivially equal to \(\pm 1\) when the kernel matrices
+associated with \(\mathbf{X}\) and \(\mathbf{Y}\) are full-rank ([Gretton,
 Herbrich, et al., 2005](#ref-gretton05a)). A common practice is to add
 some regularization to this problem by penalizing rougher witness
-functions, $f$ and $g$, which yields the following
+functions, \(f\) and \(g\), which yields the following
 generalized-eigenvalue problem:
 
 $$\begin{aligned}
@@ -200,24 +200,24 @@ $$\begin{aligned}
 \end{aligned}$$
 
 where
-$\tilde{\Theta} = \mathbf{H}\Theta\left(\mathbf{X}\right)\mathbf{H}$ and
-$\tilde{\mathbf{L}} = \mathbf{H}\mathbf{Y}\mathbf{Y}^T\mathbf{H}$ are
+\(\tilde{\Theta} = \mathbf{H}\Theta\left(\mathbf{X}\right)\mathbf{H}\) and
+\(\tilde{\mathbf{L}} = \mathbf{H}\mathbf{Y}\mathbf{Y}^T\mathbf{H}\) are
 the centered Gram matrices,
-$\mathbf{H} = \mathbf{I}_m - 1/m \cdot \mathbf{1}_{m\times m}$ is the
-centering matrix, $m$ is the number of data points and $\epsilon$ is the
+\(\mathbf{H} = \mathbf{I}_m - 1/m \cdot \mathbf{1}_{m\times m}\) is the
+centering matrix, \(m\) is the number of data points and \(\epsilon\) is the
 regularization constant. The regularized canonical correlation is the
-maximum eigenvalue of this problem, $\gamma = \lambda_{\text{max}}$.
+maximum eigenvalue of this problem, \(\gamma = \lambda_{\text{max}}\).
 
 # Limitations and Extensions
 
 The proposed scoring function is expected to be over-confident for two
 reasons:
 
-1.  Using $\Theta\left(\mathbf{X}\right)$ means that we are optimizing
+1.  Using \(\Theta\left(\mathbf{X}\right)\) means that we are optimizing
     the correlation over the NTK-GP prior's support, which is larger
     than the posterior's support.
 
-2.  The witness function, $f$, used for computing the canonical
+2.  The witness function, \(f\), used for computing the canonical
     correlation is the best NN fitting the training set. This amounts to
     ignoring the probabilistic information in the prior/posterior
     altogether. Therefore, it could represent an over-fitting scenario.

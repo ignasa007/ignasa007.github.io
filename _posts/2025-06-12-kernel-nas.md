@@ -96,7 +96,7 @@ $$\begin{aligned}
 where \\(W_{ij} \sim \mathcal{N}\left(0, \sigma_w^2/n_l\right)\\) and
 \\(b_i \sim \mathcal{N}\left(0, \sigma_b^2\right)\\), \\(n_l\\) being the width
 of layer \\(l\\). We define
-\\(\mathbf{\theta}^l &#x2254; \text{vec}\left(\left\{W^l,b^l\right\}\right)\\)
+\\(\mathbf{\theta}^l &#x2254; \text{vec}\left(\left{W^l,b^l\right}\right)\\)
 as the collection of parameters in layer \\(l\\), and
 \\(\mathbf{\theta} &#x2254; \text{vec}\left(\cup_{l=1}^L \mathbf{\theta}^l \right)\\)
 as the collection of all parameters.

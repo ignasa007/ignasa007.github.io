@@ -72,14 +72,12 @@ we define the score for architecture \\(\mathbf{A}\\) as
 
 $$\begin{aligned}
   S\left(\mathbf{A}\right)
-  &#x2254; \max_{f\in\mathcal{A}} \text{Corr}\left(f\left(\mathbf{X}\right), \mathbf{Y}\right)
+  = \max_{f\in\mathcal{A}} \text{Corr}\left(f\left(\mathbf{X}\right), \mathbf{Y}\right)
   = \max_{f\in\mathcal{A}, g\in\mathcal{L}} \text{Corr}\left(f\left(\mathbf{X}\right), g\left(\mathbf{Y}\right)\right)
 \end{aligned}$$
 
 where \\(\mathcal{L}\\) is the space of linear functions on \\(\mathbf{Y}\\).
-This optimization is, in general, hard to perform. \<!-- Furthermore, it
-is somewhat unprincipled since the subset of functions accessible to
-gradient descent is not the entirety of \\(\mathcal{A}\\). --\> Instead, if
+This optimization is, in general, hard to perform. Instead, if
 we were to optimize over some RKHS, then the optimization is equivalent
 to performing kernel canonical correlation analysis (KCCA) with the
 associated reproducing kernel on \\(\mathbf{X}\\) and the linear kernel on

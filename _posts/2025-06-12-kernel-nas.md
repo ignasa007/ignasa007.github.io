@@ -11,8 +11,6 @@ tags:
 - failed ideas
 ---
 
-# Summary
-
 The aim of this project was to propose a principled (training-free)
 metric for scoring models on a given dataset, thereby introducing a new
 strategy for Neural Architecture Search (NAS). The score is defined as
@@ -25,6 +23,8 @@ theoretical motivation for this metric, and aim to validate its efficacy
 on NAS benchmarks: NAS-Bench-201 ([Dong et al.,
 2020](#ref-dong2020nasbench201)) and DARTS ([Liu et al.,
 2019](#ref-liu2018darts)).
+
+{% include toc %}
 
 # Introduction
 

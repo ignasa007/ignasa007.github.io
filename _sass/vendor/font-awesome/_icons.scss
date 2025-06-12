@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // specific icon class definition
 // -------------------------
 
@@ -8,3 +9,15 @@ readers do not read off random characters that represent icons */
   .#{$fa-css-prefix}-#{$name}::before { content: unquote("\"#{ $icon }\""); }
 }
 
+=======
+// specific icon class definition
+// -------------------------
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+readers do not read off random characters that represent icons */
+
+@each $name, $icon in $fa-icons {
+  .#{$fa-css-prefix}-#{$name}::before { content: unquote("\"#{ $icon }\""); }
+}
+
+>>>>>>> template/master

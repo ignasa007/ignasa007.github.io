@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Margins API
 // ===========
 
@@ -21,3 +22,28 @@
 
   @include output($output);
 }
+=======
+// Margins API
+// ===========
+
+// Margin Output
+// -------------
+// - $before  : <length>
+// - $after   : <length>
+// - [$flow]  : ltr | rtl
+@mixin margin-output(
+  $before,
+  $after,
+  $flow: map-get($susy-defaults, flow)
+) {
+  $to: to($flow);
+  $from: from($flow);
+
+  $output: (
+    margin-#{$from}: $before,
+    margin-#{$to}: $after,
+  );
+
+  @include output($output);
+}
+>>>>>>> template/master

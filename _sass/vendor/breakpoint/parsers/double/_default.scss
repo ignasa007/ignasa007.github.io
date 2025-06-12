@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @function breakpoint-parse-double-default($first, $second) {
   $feature: '';
   $value: '';
@@ -21,27 +20,3 @@
 
   @return '(#{$feature}: #{$value})'
 }
-=======
-@function breakpoint-parse-double-default($first, $second) {
-  $feature: '';
-  $value: '';
-
-  @if type-of($first) == 'string' {
-    $feature: $first;
-    $value: $second;
-  }
-  @else {
-    $feature: $second;
-    $value: $first;
-  }
-
-  // Set Context
-  $context-setter: private-breakpoint-set-context($feature, $value);
-
-  @if (breakpoint-get('to ems') == true) {
-    $value: breakpoint-to-base-em($value);
-  }
-
-  @return '(#{$feature}: #{$value})'
-}
->>>>>>> template/master

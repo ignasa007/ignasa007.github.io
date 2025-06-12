@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Validation
 // ==========
 
@@ -15,21 +14,3 @@
 
   @return $column-width;
 }
-=======
-// Validation
-// ==========
-
-
-// Validate Column Math
-// --------------------
-@function valid-column-math(
-  $math,
-  $column-width
-) {
-  @if $math == static and not($column-width) {
-    @error 'Static math requires a valid column-width setting.';
-  }
-
-  @return $column-width;
-}
->>>>>>> template/master

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @function breakpoint-no-query($query) {
   @if type-of($query) == 'list' {
     $keyword: nth($query, 1);
@@ -14,20 +13,3 @@
     @return false;
   }
 }
-=======
-@function breakpoint-no-query($query) {
-  @if type-of($query) == 'list' {
-    $keyword: nth($query, 1);
-
-    @if type-of($keyword) == 'string' and ($keyword == 'no-query' or $keyword == 'no query' or $keyword == 'fallback') {
-      @return nth($query, 2);
-    }
-    @else {
-      @return false;
-    }
-  }
-  @else {
-    @return false;
-  }
-}
->>>>>>> template/master

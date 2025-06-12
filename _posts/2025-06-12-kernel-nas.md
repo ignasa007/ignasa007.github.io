@@ -139,12 +139,12 @@ which also converges in the infinite-width limit.
 The covariance \\(\Sigma_{\text{NN}}\\) is inconvenient to deal with,
 involving two computationally expensive kernel computations, and a
 series of cubic-time matrix operations. To tackle this, we can augment
-the forward pass &ndash; denoted by \\(\tilde{f}_{\theta}\\) &ndash; by adding a random,
+the forward pass &ndash; denoted by \\( \tilde{f}_{\theta} \\) &ndash; by adding a random,
 untrainable function, which results in the distribution at convergence
 having a GP-posterior-like form, with \\(\Theta\\) as the covariance kernel
 ([He et al., 2020](#ref-bobby_2020_bayesian-ensembles-ntk)),
-\\(\tilde{f}_{\theta_{\infty}} \sim \mathcal{N}(\mu_{\text{NTK}},\Sigma_{\text{NTK}})\\),
-where \\(\mu_{\text{NTK}} = \mu_{\text{NN}}\\) and:
+$\tilde{f}_{\theta_{\infty}} \sim \mathcal{N}(\mu_{\text{NTK}},\Sigma_{\text{NTK}})$,
+where $\mu_{\text{NTK}} = \mu_{\text{NN}}$ and:
 
 $$\begin{aligned}
     \Sigma_{\text{NTK}}\left(x,x'\right) = \Theta\left(x,x'\right) - \Theta\left(x,\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \Theta\left(\mathbf{X},x'\right)

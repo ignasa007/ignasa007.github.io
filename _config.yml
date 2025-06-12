@@ -50,12 +50,12 @@ publication_category:
     title: 'In Preparation'
   under-review:
     title: 'Under Review'
+  preprint:
+    title: 'Preprints'
   conference:
     title: 'Conference Papers'
   journal:
     title: 'Journal Articles'
-  preprint:
-    title: 'Preprints'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

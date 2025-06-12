@@ -23,4 +23,8 @@
     pandoc main.tex -M link-citations=true --citeproc --bibliography=refs.bib --csl=custom.csl --mathjax -s -o main.html
     ```
 
+4. Wrap the in-line equations in `\\(...\\)` instead of `$...$` &ndash; find `\$([^$]+?)\$` and replace with `\\($1\\)`.
+
+5. Replace `_` with `\_` ONLY in in-line equations &ndash; not in math mode or citations.
+
 4. Replace the references section in `main.md` with the one in `main.html`. (Add a 'References' section title.)

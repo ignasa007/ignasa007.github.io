@@ -167,8 +167,8 @@ width, so that the feature mapping,
 \\(x \mapsto \nabla\_{\theta}f\_{\theta}\left(x\right)\\), associated with the
 empirical NTK, \\(\Theta\\), is finite dimensional. Hence, the samples from
 the NTK-GP prior are almost-surely contained in the RKHS,
-\\(\mathcal{H}\_{\Theta}\\), associated with \\(\Theta\\) (\<span
-style=\"color:red\"\>not sure about this part\</span\>). Since the GP
+\\(\mathcal{H}\_{\Theta}\\), associated with \\(\Theta\\) (<span
+style="color:red">not sure about this part</span\>). Since the GP
 posterior does not have support where the prior does not, the posterior
 samples are also contained in this RKHS. Therefore, we can use the RKHS
 associated with the NTK to compute the KCC:

@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm Jasraj Singh, a machine learning researcher with a passion for understanding how neural networks learn and how we can make them better. My work spans large language models, graph neural networks, and active learning, with a focus on theoretical insights, mechanisitic interpretations, and practical applications.
+I'm Jasraj Singh, a machine learning researcher with a passion for understanding how neural networks learn and how we can make them better. My work spans graph neural networks, large language models, and neural active learning, with a focus on theoretical insights, mechanisitic interpretations, and efficiency in deep learning.
 
 I recently graduated with a **Master's in Machine Learning from University College London (UCL)**, earning first-class honors and a place on the Dean's List. Advised by Prof. Laura Toni and Prof. Brooks Paige, my [thesis research](https://ignasa007.github.io/files/msc-thesis_jasraj-singh.pdf) explored the limitations of edge-dropping algorithms like DropEdge in Graph Neural Networks (GNNs). I extended this theoretical analysis to 6 dropout-like algorithms commonly used for training deep GNNs, empirically demonstrating their negative effects on long-range learning tasks. [Read more](https://ignasa007.github.io/publication/edge-dropping).
 

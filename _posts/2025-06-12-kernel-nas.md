@@ -110,7 +110,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 where \\(\mathcal{D}\\) is the training data set, \\(\mathcal{L}\\) is the loss
-function, \\(\eta\\) is the learning rate, and \\(\hat{\Theta}_t\\) is the
+function, \\(\eta\\) is the learning rate, and $\hat{\Theta}_t$ is the
 Empirical Neural Tangent Kernel (NTK) ([Jacot et al.,
 2018](#ref-jacot_2018_ntk)).
 

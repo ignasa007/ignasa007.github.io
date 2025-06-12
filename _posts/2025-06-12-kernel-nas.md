@@ -119,7 +119,7 @@ analytical limit, \\(\Theta\\), and the NNs evolve as linear models ([Lee et
 al., 2019](#ref-lee_2019_wide-nets-linear)). Under gradient flow, the
 predictive distribution of this wide network converges to a normal
 distribution ([Lee et al., 2019](#ref-lee_2019_wide-nets-linear)),
-\\(f^{\text{lin}}_{\theta_{\infty}}\left(x\right) \sim \mathcal{N}\left(\mu_{\text{NN}}\left(x\right),\Sigma_{\text{NN}}\left(x,x\right)\right)\\),
+\\(f^{\text{lin}}_{\theta_{\infty}}(x) \sim \mathcal{N}(\mu_{\text{NN}}(x),\Sigma_{\text{NN}}(x,x))\\),
 where
 
 $$\begin{aligned}
@@ -139,11 +139,11 @@ which also converges in the infinite-width limit.
 The covariance \\(\Sigma_{\text{NN}}\\) is inconvenient to deal with,
 involving two computationally expensive kernel computations, and a
 series of cubic-time matrix operations. To tackle this, we can augment
-the forward pass (denoted by \\(\tilde{f}_{\theta}\\)) by adding a random,
+the forward pass &ndash; denoted by \\(\tilde{f}_{\theta}\\) &ndash; by adding a random,
 untrainable function, which results in the distribution at convergence
 having a GP-posterior-like form, with \\(\Theta\\) as the covariance kernel
 ([He et al., 2020](#ref-bobby_2020_bayesian-ensembles-ntk)),
-\\(\tilde{f}_{\theta_{\infty}} \sim \mathcal{N}\left(\mu_{\text{NTK}},\Sigma_{\text{NTK}}\right)\\),
+\\(\tilde{f}_{\theta_{\infty}} \sim \mathcal{N}(\mu_{\text{NTK}},\Sigma_{\text{NTK}})\\),
 where \\(\mu_{\text{NTK}} = \mu_{\text{NN}}\\) and:
 
 $$\begin{aligned}

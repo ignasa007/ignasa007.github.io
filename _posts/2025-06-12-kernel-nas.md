@@ -34,7 +34,7 @@ extensive trial-and-error. For example, cross-validation is a popular
 choice for model selection, involving training of a number of randomly
 initialized models. NAS addresses this challenge by automating the
 discovery of high-performing architectures within a predefined search
-space ([Poyser et al., 2024](#ref-poyser\_2024\_nas-review)). Most methods
+space ([Poyser et al., 2024](#ref-poyser_2024_nas-review)). Most methods
 for NAS incur a high search cost in the form of (partially) training the
 architectures to score them, and/or training a \*search model\* that can
 make the architecture search efficient. Recently, there has been a
@@ -67,13 +67,13 @@ same for \\(\mathbf{A}\\). In that case, minimizing the Mean Squared Error
 (MSE) between the network output and the regression labels, is
 equivalent to maximizing their correlation, since the parameters of the
 output layer can be adjusted post-training to get the minimizer of the
-MSE ([Englisch et al., 1994](#ref-englisch\_1994\_corr-mse)). Accordingly,
+MSE ([Englisch et al., 1994](#ref-englisch_1994_corr-mse)). Accordingly,
 we define the score for architecture \\(\mathbf{A}\\) as
 
 $$\begin{aligned}
   S\left(\mathbf{A}\right)
-  = \max\_{f\in\mathcal{A}} \text{Corr}\left(f\left(\mathbf{X}\right), \mathbf{Y}\right)
-  = \max\_{f\in\mathcal{A}, g\in\mathcal{L}} \text{Corr}\left(f\left(\mathbf{X}\right), g\left(\mathbf{Y}\right)\right)
+  = \max_{f\in\mathcal{A}} \text{Corr}\left(f\left(\mathbf{X}\right), \mathbf{Y}\right)
+  = \max_{f\in\mathcal{A}, g\in\mathcal{L}} \text{Corr}\left(f\left(\mathbf{X}\right), g\left(\mathbf{Y}\right)\right)
 \end{aligned}$$
 
 where \\(\mathcal{L}\\) is the space of linear functions on \\(\mathbf{Y}\\).
@@ -105,27 +105,27 @@ The parameter dynamics and the predictive dynamics for this model under
 gradient flow can be written as:
 
 $$\begin{aligned}
-  \dot{\theta}\_t &= -\eta \nabla\_{\theta} \mathcal{L}\left(\mathcal{D}; \theta\_t\right) = -\eta \nabla\_{\theta} f\left(\mathbf{X}; \theta\_t\right)^T \nabla\_{f} \mathcal{L}(\mathcal{D}; \theta\_t) \\
-  \dot{f}(\mathbf{X}; \theta\_t) &= \nabla\_{\theta}f(\mathbf{X};\theta\_t) \dot{\theta}\_t = -\eta \underbrace{\nabla\_{\theta} f(\mathbf{X}; \theta\_t) \nabla\_{\theta} f(\mathbf{X}; \theta\_t)^T}\_{\triangleq \hat{\Theta}\_t(\mathbf{X}, \mathbf{X})} \nabla\_{f} \mathcal{L}(\mathcal{D}; \theta\_t)
+  \dot{\theta}_t &= -\eta \nabla_{\theta} \mathcal{L}\left(\mathcal{D}; \theta_t\right) = -\eta \nabla_{\theta} f\left(\mathbf{X}; \theta_t\right)^T \nabla_{f} \mathcal{L}(\mathcal{D}; \theta_t) \\
+  \dot{f}(\mathbf{X}; \theta_t) &= \nabla_{\theta}f(\mathbf{X};\theta_t) \dot{\theta}_t = -\eta \underbrace{\nabla_{\theta} f(\mathbf{X}; \theta_t) \nabla_{\theta} f(\mathbf{X}; \theta_t)^T}_{\triangleq \hat{\Theta}_t(\mathbf{X}, \mathbf{X})} \nabla_{f} \mathcal{L}(\mathcal{D}; \theta_t)
 \end{aligned}$$
 
 where \\(\mathcal{D}\\) is the training data set, \\(\mathcal{L}\\) is the loss
 function, \\(\eta\\) is the learning rate, and \\(\hat{\Theta}\_t\\) is the
 Empirical Neural Tangent Kernel (NTK) ([Jacot et al.,
-2018](#ref-jacot\_2018\_ntk)).
+2018](#ref-jacot_2018_ntk)).
 
 In the infinite-width limit, the NTK converges in distribution to an
 analytical limit, \\(\Theta\\), and the NNs evolve as linear models ([Lee et
-al., 2019](#ref-lee\_2019\_wide-nets-linear)). Under gradient flow, the
+al., 2019](#ref-lee_2019_wide-nets-linear)). Under gradient flow, the
 predictive distribution of this wide network converges to a normal
-distribution ([Lee et al., 2019](#ref-lee\_2019\_wide-nets-linear)),
+distribution ([Lee et al., 2019](#ref-lee_2019_wide-nets-linear)),
 \\(f^{\text{lin}}\_{\theta\_{\infty}}(x) \sim \mathcal{N}(\mu\_{\text{NN}}(x),\Sigma\_{\text{NN}}(x,x))\\),
 where
 
 $$\begin{aligned}
-  &\mu\_{\text{NN}}\left(x\right) = \Theta\left(x,\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \mathbf{Y} \\
+  &\mu_{\text{NN}}\left(x\right) = \Theta\left(x,\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \mathbf{Y} \\
   &\begin{split}
-    \Sigma\_{\text{NN}}\left(x,x'\right) &= \mathcal{K}\left(x,x'\right) + \Theta\left(x,\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \mathcal{K}\left(\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \Theta\left(\mathbf{X},x'\right) \\
+    \Sigma_{\text{NN}}\left(x,x'\right) &= \mathcal{K}\left(x,x'\right) + \Theta\left(x,\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \mathcal{K}\left(\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \Theta\left(\mathbf{X},x'\right) \\
     &\quad - \left(\Theta\left(x,\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \mathcal{K}\left(\mathbf{X},x'\right) +
     \mathcal{K}\left(x',\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \Theta\left(\mathbf{X},x\right)\right)
   \end{split}
@@ -142,12 +142,12 @@ series of cubic-time matrix operations. To tackle this, we can augment
 the forward pass &ndash; denoted by \\(\tilde{f}\_{\theta}\\) &ndash; by adding a random,
 untrainable function, which results in the distribution at convergence
 having a GP-posterior-like form, with \\(\Theta\\) as the covariance kernel
-([He et al., 2020](#ref-bobby\_2020\_bayesian-ensembles-ntk)),
+([He et al., 2020](#ref-bobby_2020_bayesian-ensembles-ntk)),
 $\tilde{f}\_{\theta\_{\infty}} \sim \mathcal{N}(\mu\_{\text{NTK}},\Sigma\_{\text{NTK}})$,
 where $\mu\_{\text{NTK}} = \mu\_{\text{NN}}$ and:
 
 $$\begin{aligned}
-    \Sigma\_{\text{NTK}}\left(x,x'\right) = \Theta\left(x,x'\right) - \Theta\left(x,\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \Theta\left(\mathbf{X},x'\right)
+    \Sigma_{\text{NTK}}\left(x,x'\right) = \Theta\left(x,x'\right) - \Theta\left(x,\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \Theta\left(\mathbf{X},x'\right)
 \end{aligned}$$
 
 Importantly, in my Bachelor's thesis project ([Hemachandra et al.,
@@ -175,7 +175,7 @@ associated with the NTK to compute the KCC:
 
 $$\begin{aligned}
     S\left(\mathbf{A}\right)
-    \approx \max\_{f\in\mathcal{H}\_{\Theta}, g\in\mathcal{L}} \text{Corr}\left(f\left(\mathbf{X}\right), g\left(\mathbf{Y}\right)\right)
+    \approx \max_{f\in\mathcal{H}_{\Theta}, g\in\mathcal{L}} \text{Corr}\left(f\left(\mathbf{X}\right), g\left(\mathbf{Y}\right)\right)
 \end{aligned}$$
 
 This value is trivially equal to \\(\pm 1\\) when the kernel matrices
@@ -269,7 +269,7 @@ of reproducible neural architecture search. In <em>International
 conference on learning representations (ICLR)</em>. Retrieved from <a
 href="https://openreview.net/forum?id=HJxyZkBKDr">https://openreview.net/forum?id=HJxyZkBKDr</a>
 </div>
-<div id="ref-englisch\_1994\_corr-mse" class="csl-entry" role="listitem">
+<div id="ref-englisch_1994_corr-mse" class="csl-entry" role="listitem">
 [6] Englisch, H., &amp; Hiemstra, Y. (1994). The correlation as cost
 function in neural networks. In <em>Proceedings of 1994 IEEE
 international conference on neural networks (ICNN’94)</em> (Vol. 5, pp.
@@ -296,13 +296,13 @@ Machine Learning Research</em>, <em>6</em>(70), 2075–2129. Retrieved
 from <a
 href="http://jmlr.org/papers/v6/gretton05a.html">http://jmlr.org/papers/v6/gretton05a.html</a>
 </div>
-<div id="ref-bobby\_2020\_bayesian-ensembles-ntk" class="csl-entry"
+<div id="ref-bobby_2020_bayesian-ensembles-ntk" class="csl-entry"
 role="listitem">
 [10] He, B., Lakshminarayanan, B., &amp; Teh, Y. W. (2020). Bayesian
 deep ensembles via the neural tangent kernel. In <em>Advances in neural
 information processing systems</em> (Vol. 33, pp. 1010–1022). Curran
 Associates, Inc. Retrieved from <a
-href="https://proceedings.neurips.cc/paper\_files/paper/2020/file/0b1ec366924b26fc98fa7b71a9c249cf-Paper.pdf">https://proceedings.neurips.cc/paper\_files/paper/2020/file/0b1ec366924b26fc98fa7b71a9c249cf-Paper.pdf</a>
+href="https://proceedings.neurips.cc/paper_files/paper/2020/file/0b1ec366924b26fc98fa7b71a9c249cf-Paper.pdf">https://proceedings.neurips.cc/paper_files/paper/2020/file/0b1ec366924b26fc98fa7b71a9c249cf-Paper.pdf</a>
 </div>
 <div id="ref-hemachandra23a" class="csl-entry" role="listitem">
 [11] Hemachandra, A., Dai, Z., Singh, J., Ng, S.-K., &amp; Low, B. K. H.
@@ -312,21 +312,21 @@ international conference on machine learning</em> (Vol. 202, pp.
 12931–12971). PMLR. Retrieved from <a
 href="https://proceedings.mlr.press/v202/hemachandra23a.html">https://proceedings.mlr.press/v202/hemachandra23a.html</a>
 </div>
-<div id="ref-jacot\_2018\_ntk" class="csl-entry" role="listitem">
+<div id="ref-jacot_2018_ntk" class="csl-entry" role="listitem">
 [12] Jacot, A., Gabriel, F., &amp; Hongler, C. (2018). Neural tangent
 kernel: Convergence and generalization in neural networks. In
 <em>Advances in neural information processing systems</em> (Vol. 31).
 Curran Associates, Inc. Retrieved from <a
-href="https://proceedings.neurips.cc/paper\_files/paper/2018/file/5a4be1fa34e62bb8a6ec6b91d2462f5a-Paper.pdf">https://proceedings.neurips.cc/paper\_files/paper/2018/file/5a4be1fa34e62bb8a6ec6b91d2462f5a-Paper.pdf</a>
+href="https://proceedings.neurips.cc/paper_files/paper/2018/file/5a4be1fa34e62bb8a6ec6b91d2462f5a-Paper.pdf">https://proceedings.neurips.cc/paper_files/paper/2018/file/5a4be1fa34e62bb8a6ec6b91d2462f5a-Paper.pdf</a>
 </div>
-<div id="ref-lee\_2019\_wide-nets-linear" class="csl-entry"
+<div id="ref-lee_2019_wide-nets-linear" class="csl-entry"
 role="listitem">
 [13] Lee, J., Xiao, L., Schoenholz, S., Bahri, Y., Novak, R.,
 Sohl-Dickstein, J., &amp; Pennington, J. (2019). Wide neural networks of
 any depth evolve as linear models under gradient descent. In
 <em>Advances in neural information processing systems</em> (Vol. 32).
 Curran Associates, Inc. Retrieved from <a
-href="https://proceedings.neurips.cc/paper\_files/paper/2019/file/0d1a9651497a38d8b1c3871c84528bd4-Paper.pdf">https://proceedings.neurips.cc/paper\_files/paper/2019/file/0d1a9651497a38d8b1c3871c84528bd4-Paper.pdf</a>
+href="https://proceedings.neurips.cc/paper_files/paper/2019/file/0d1a9651497a38d8b1c3871c84528bd4-Paper.pdf">https://proceedings.neurips.cc/paper_files/paper/2019/file/0d1a9651497a38d8b1c3871c84528bd4-Paper.pdf</a>
 </div>
 <div id="ref-liu2018darts" class="csl-entry" role="listitem">
 [14] Liu, H., Simonyan, K., &amp; Yang, Y. (2019). <span>DARTS</span>:
@@ -341,7 +341,7 @@ Dorffner, H. Bischof, &amp; K. Hornik (Eds.), <em>Artificial neural
 networks — ICANN 2001</em> (pp. 353–360). Berlin, Heidelberg: Springer
 Berlin Heidelberg.
 </div>
-<div id="ref-poyser\_2024\_nas-review" class="csl-entry" role="listitem">
+<div id="ref-poyser_2024_nas-review" class="csl-entry" role="listitem">
 [16] Poyser, M., &amp; Breckon, T. P. (2024). Neural architecture
 search: A contemporary literature review for computer vision
 applications. <em>Pattern Recognition</em>, <em>147</em>, 110052. doi:<a

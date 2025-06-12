@@ -3,7 +3,7 @@
 2. Convert the LaTeX document to a Markdown
 
     ```bash
-    pandoc main.tex -M link-citations=true --citeproc --bibliography=refs.bib --csl=apa.csl --mathjax -s -o main.md
+    pandoc main.tex -M link-citations=true --citeproc --bibliography=refs.bib --csl=custom.csl --mathjax -s -o main.md
     ```
 
     This will look fine, except the references section will look weird, example
@@ -20,7 +20,7 @@
 3. Convert the LaTeX file to HTML
 
     ```bash
-    pandoc main.tex -M link-citations=true --citeproc --bibliography=refs.bib --csl=apa.csl --mathjax -s -o main.html
+    pandoc main.tex -M link-citations=true --citeproc --bibliography=refs.bib --csl=custom.csl --mathjax -s -o main.html
     ```
 
-4. Replace the references section in `main.md` with the one in `main.html`. 
+4. Replace the references section in `main.md` with the one in `main.html`. (Add a 'References' section title.)

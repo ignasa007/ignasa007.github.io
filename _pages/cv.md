@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Curriculum Vitae"
-permalink: /files/academic-cv_jasraj-singh.pdf
+permalink: /files/cv.pdf
 author_profile: true
 redirect_from:
   - /resume

@@ -15,5 +15,4 @@ main:
     url: /blog/
     
   - title: "CV"
-    url: "/files/academic-cv_jasraj-singh.pdf"
-    # url: /cv/
+    url: "/files/cv.pdf"

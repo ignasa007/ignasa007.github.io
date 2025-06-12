@@ -110,7 +110,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 where \\(\mathcal{D}\\) is the training data set, \\(\mathcal{L}\\) is the loss
-function, \\(\eta\\) is the learning rate, and $\hat{\Theta}_t$ is the
+function, \\(\eta\\) is the learning rate, and \\(\hat{\Theta}_t\\) is the
 Empirical Neural Tangent Kernel (NTK) ([Jacot et al.,
 2018](#ref-jacot_2018_ntk)).
 
@@ -119,7 +119,7 @@ analytical limit, \\(\Theta\\), and the NNs evolve as linear models ([Lee et
 al., 2019](#ref-lee_2019_wide-nets-linear)). Under gradient flow, the
 predictive distribution of this wide network converges to a normal
 distribution ([Lee et al., 2019](#ref-lee_2019_wide-nets-linear)),
-$f^{\text{lin}}_{\theta_{\infty}}\left(x\right) \sim \mathcal{N}\left(\mu_{\text{NN}}\left(x\right),\Sigma_{\text{NN}}\left(x,x\right)\right)$,
+\\(f^{\text{lin}}_{\theta_{\infty}}\left(x\right) \sim \mathcal{N}\left(\mu_{\text{NN}}\left(x\right),\Sigma_{\text{NN}}\left(x,x\right)\right)\\),
 where
 
 $$\begin{aligned}

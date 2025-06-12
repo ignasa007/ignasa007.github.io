@@ -12,7 +12,7 @@ main:
     url: /teaching/
         
   - title: "Blog Posts"
-    url: /blog/
+    url: /posts/
     
   - title: "CV"
     url: "/files/cv.pdf"

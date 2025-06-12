@@ -50,9 +50,9 @@
       {{ post.citation }}
       
       {% if post.paperurl %}
-        <p><a href="{{ base_path }}{{ post.url }}" rel="permalink">Abstract</a> | <a href="{{ post.paperurl }}">URL</a></p>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">Abstract</a> | <a href="{{ post.paperurl }}">URL</a>
       {% else %}
-        <p><a href="{{ base_path }}{{ post.url }}" rel="permalink">Abstract</a></p>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">Abstract</a>
       {% endif %}
     
     {% endif %}
@@ -65,7 +65,7 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
 
-      <p><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.</p>
+      <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
   
     {% endif %}
     

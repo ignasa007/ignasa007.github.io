@@ -64,10 +64,10 @@ Instead, if we were to optimize over some RKHS, then the optimization is equival
 Consider an $L$-layer fully-connected feed-forward network under the NTK parameterization:
 
 \begin{align}
-  \mathbf{x}^{l+1} = \mathbf{W}^{l+1}\mathbf{x}^l + \mathbf{b}^{l+1}
+  \mathbf{x}^{l+1} = \frac{1}{\sqrt{n_l}} \mathbf{W}^{l+1}\mathbf{x}^l + \mathbf{b}^{l+1}
 \end{align}
 
-where $W_{ij} \sim \mathcal{N}\left(0, \sigma_w^2/n_l\right)$ and $b_i \sim \mathcal{N}\left(0, \sigma_b^2\right)$, $n_l$ being the width of layer $l$. We define $\mathbf{\theta}^l \coloneqq \text{vec}\left(\left\{W^l,b^l\right\}\right)$ as the collection of parameters in layer $l$, and $\mathbf{\theta} \coloneqq \text{vec}\left(\cup_{l=1}^L \mathbf{\theta}^l \right)$ as the collection of all parameters.
+with $n_l$ being the width of layer $l$, and all parameters initialized i.i.d. from the standard normal distribution, $\mathcal{N}\left(0, 1\right)$. We define $\mathbf{\theta}^l \coloneqq \text{vec}\left(\left\{W^l,b^l\right\}\right)$ as the collection of parameters in layer $l$, and $\mathbf{\theta} \coloneqq \text{vec}\left(\cup_{l=1}^L \mathbf{\theta}^l \right)$ as the collection of all parameters.
 
 The parameter dynamics and the predictive dynamics for this model under gradient flow can be written as:
 
@@ -141,6 +141,6 @@ Another limitation is the lack of interpretability of KCC, which is crucial in m
 
 \clearpage
 \bibliographystyle{apalike}
-\bibliography{references}
+\bibliography{refs}
 
 \end{document}

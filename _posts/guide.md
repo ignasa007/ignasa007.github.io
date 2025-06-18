@@ -25,8 +25,8 @@
 
 4. Replace the references section in `main.md` with the one in `main.html`. (Add a 'References' section title.)
 
-5. Wrap the in-line equations in `\\(...\\)` instead of `$...$` &ndash; find `\$([^$]+?)\$` and replace with `\\($1\\)`.
+5. Wrap the in-line equations in `\\(...\\)` instead of `$...$` &ndash; find `\$([^$]+?)\$` and replace with `\\\\($1\\\\)`.
 
-6. Replace `_` with `\_` ONLY in in-line equations &ndash; not in math mode or citations.
+6. Replace `_` with `\_` ONLY in in-line equations, not in math mode or citations &ndash; find `_` and replace with `\\_`.
 
-7. Replace `\{` and `\}` with `\\{` and `\\}`, respectively.
+7. Replace `\{` and `\}` with `\\{` and `\\}`, respectively &ndash; find `\\([{}])` and replace with `\\\\$1`.

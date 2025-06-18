@@ -1,7 +1,6 @@
 ---
-author:
-- Jasraj Singh
-bibliography: references.bib
+author: Jasraj Singh
+bibliography: refs.bib
 csl: custom.csl
 date: 12 June, 2025
 link-citations: true
@@ -10,6 +9,8 @@ permalink: /blog-posts/kernel-nas/
 tags:
 - failed ideas
 ---
+
+# Summary
 
 The aim of this project was to propose a principled (training-free)
 metric for scoring models on a given dataset, thereby introducing a new
@@ -24,8 +25,6 @@ on NAS benchmarks: NAS-Bench-201 ([Dong et al.,
 2020](#ref-dong2020nasbench201)) and DARTS ([Liu et al.,
 2019](#ref-liu2018darts)).
 
-<!-- {% include toc %} -->
-
 # Introduction
 
 Selecting Neural Network (NN) architectures for a task has traditionally
@@ -36,7 +35,7 @@ initialized models. NAS addresses this challenge by automating the
 discovery of high-performing architectures within a predefined search
 space ([Poyser et al., 2024](#ref-poyser_2024_nas-review)). Most methods
 for NAS incur a high search cost in the form of (partially) training the
-architectures to score them, and/or training a _search model_ that can
+architectures to score them, and/or training a \*search model\* that can
 make the architecture search efficient. Recently, there has been a
 increased focus on cheapening the search process, while retaining or
 improving the quality of the selected architectures. Some of these are
@@ -72,12 +71,14 @@ we define the score for architecture \\(\mathbf{A}\\) as
 
 $$\begin{aligned}
   S\left(\mathbf{A}\right)
-  = \max_{f\in\mathcal{A}} \text{Corr}\left(f\left(\mathbf{X}\right), \mathbf{Y}\right)
+  &#x2254; \max_{f\in\mathcal{A}} \text{Corr}\left(f\left(\mathbf{X}\right), \mathbf{Y}\right)
   = \max_{f\in\mathcal{A}, g\in\mathcal{L}} \text{Corr}\left(f\left(\mathbf{X}\right), g\left(\mathbf{Y}\right)\right)
 \end{aligned}$$
 
 where \\(\mathcal{L}\\) is the space of linear functions on \\(\mathbf{Y}\\).
-This optimization is, in general, hard to perform. Instead, if
+This optimization is, in general, hard to perform. \<!-- Furthermore, it
+is somewhat unprincipled since the subset of functions accessible to
+gradient descent is not the entirety of \\(\mathcal{A}\\). --\> Instead, if
 we were to optimize over some RKHS, then the optimization is equivalent
 to performing kernel canonical correlation analysis (KCCA) with the
 associated reproducing kernel on \\(\mathbf{X}\\) and the linear kernel on
@@ -93,8 +94,9 @@ $$\begin{aligned}
   \mathbf{x}^{l+1} = \frac{1}{\sqrt{n_l}} \mathbf{W}^{l+1}\mathbf{x}^l + \mathbf{b}^{l+1}
 \end{aligned}$$
 
-where \\(n\_l\\) is the width of layer \\(l\\), and the parameters are initialized as 
-\\(W\_{ij} \sim \mathcal{N}\left(0, 1\right)\\) and \\(b\_i \sim \mathcal{N}\left(0, 1\right)\\). We define
+with \\(n\_l\\) being the width of layer \\(l\\), and all parameters initialized
+i.i.d. from the standard normal distribution,
+\\(\mathcal{N}\left(0, 1\right)\\). We define
 \\(\mathbf{\theta}^l &#x2254; \text{vec}\left(\left\\{W^l,b^l\right\\}\right)\\)
 as the collection of parameters in layer \\(l\\), and
 \\(\mathbf{\theta} &#x2254; \text{vec}\left(\cup\_{l=1}^L \mathbf{\theta}^l \right)\\)
@@ -118,7 +120,7 @@ analytical limit, \\(\Theta\\), and the NNs evolve as linear models ([Lee et
 al., 2019](#ref-lee_2019_wide-nets-linear)). Under gradient flow, the
 predictive distribution of this wide network converges to a normal
 distribution ([Lee et al., 2019](#ref-lee_2019_wide-nets-linear)),
-\\(f^{\text{lin}}\_{\theta\_{\infty}}(x) \sim \mathcal{N}(\mu\_{\text{NN}}(x),\Sigma\_{\text{NN}}(x,x))\\),
+\\(f^{\text{lin}}\_{\theta\_{\infty}}\left(x\right) \sim \mathcal{N}\left(\mu\_{\text{NN}}\left(x\right),\Sigma\_{\text{NN}}\left(x,x\right)\right)\\),
 where
 
 $$\begin{aligned}
@@ -138,12 +140,12 @@ which also converges in the infinite-width limit.
 The covariance \\(\Sigma\_{\text{NN}}\\) is inconvenient to deal with,
 involving two computationally expensive kernel computations, and a
 series of cubic-time matrix operations. To tackle this, we can augment
-the forward pass &ndash; denoted by \\(\tilde{f}\_{\theta}\\) &ndash; by adding a random,
+the forward pass (denoted by \\(\tilde{f}\_{\theta}\\)) by adding a random,
 untrainable function, which results in the distribution at convergence
 having a GP-posterior-like form, with \\(\Theta\\) as the covariance kernel
 ([He et al., 2020](#ref-bobby_2020_bayesian-ensembles-ntk)),
-$\tilde{f}\_{\theta\_{\infty}} \sim \mathcal{N}(\mu\_{\text{NTK}},\Sigma\_{\text{NTK}})$,
-where $\mu\_{\text{NTK}} = \mu\_{\text{NN}}$ and:
+\\(\tilde{f}\_{\theta\_{\infty}} \sim \mathcal{N}\left(\mu\_{\text{NTK}},\Sigma\_{\text{NTK}}\right)\\),
+where \\(\mu\_{\text{NTK}} = \mu\_{\text{NN}}\\) and:
 
 $$\begin{aligned}
     \Sigma_{\text{NTK}}\left(x,x'\right) = \Theta\left(x,x'\right) - \Theta\left(x,\mathbf{X}\right) \Theta\left(\mathbf{X}\right)^{-1} \Theta\left(\mathbf{X},x'\right)
@@ -166,7 +168,8 @@ width, so that the feature mapping,
 \\(x \mapsto \nabla\_{\theta}f\_{\theta}\left(x\right)\\), associated with the
 empirical NTK, \\(\Theta\\), is finite dimensional. Hence, the samples from
 the NTK-GP prior are almost-surely contained in the RKHS,
-\\(\mathcal{H}\_{\Theta}\\), associated with \\(\Theta\\) (<span style="color:red">not sure about this part</span>). Since the GP
+\\(\mathcal{H}\_{\Theta}\\), associated with \\(\Theta\\) (\<span
+style=\"color:red\"\>not sure about this part\</span\>). Since the GP
 posterior does not have support where the prior does not, the posterior
 samples are also contained in this RKHS. Therefore, we can use the RKHS
 associated with the NTK to compute the KCC:
@@ -231,6 +234,7 @@ Hilbert-Schmidt Independence Criterion (HSIC) ([Gretton, Bousquet, et
 al., 2005](#ref-gretton2005hsic)), and the Kernel Target Alignment (KTA)
 ([Cortes et al., 2012](#ref-cortes12kta)), as proposed in ([Chang et
 al., 2013](#ref-chang13hsic)).
+
 
 # References
 

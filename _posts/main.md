@@ -5,6 +5,9 @@ csl: custom.csl
 date: 12 June, 2025
 link-citations: true
 title: Kernel Methods for NAS
+permalink: /blog-posts/kernel-nas/
+tags:
+- failed ideas
 ---
 
 # Summary

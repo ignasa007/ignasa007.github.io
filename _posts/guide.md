@@ -30,3 +30,5 @@
 6. Replace `_` with `\_` ONLY in in-line equations, not in math mode or citations &ndash; find `_` and replace with `\\_`.
 
 7. Replace `\{` and `\}` with `\\{` and `\\}`, respectively &ndash; find `\\([{}])` and replace with `\\\\$1`.
+
+8. Add permalink and tags.

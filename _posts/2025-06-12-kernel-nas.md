@@ -71,7 +71,7 @@ we define the score for architecture \\(\mathbf{A}\\) as
 
 $$\begin{aligned}
   S\left(\mathbf{A}\right)
-  &#x2254; \max_{f\in\mathcal{A}} \text{Corr}\left(f\left(\mathbf{X}\right), \mathbf{Y}\right)
+  &\#x2254; \max_{f\in\mathcal{A}} \text{Corr}\left(f\left(\mathbf{X}\right), \mathbf{Y}\right)
   = \max_{f\in\mathcal{A}, g\in\mathcal{L}} \text{Corr}\left(f\left(\mathbf{X}\right), g\left(\mathbf{Y}\right)\right)
 \end{aligned}$$
 
